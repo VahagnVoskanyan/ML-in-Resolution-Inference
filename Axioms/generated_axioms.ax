@@ -1,0 +1,10 @@
+fof(u1, axiom, (pred1(X1) | ~pred1(X1,X3))).
+fof(u2, axiom, (~pred3(X3,X1) | ~pred2(X3,X3) | ~pred2(X2,X3))).
+fof(u3, axiom, (~pred1(X3) | ~pred3(X2,X3) | pred1(X2,X2))).
+fof(u4, axiom, (~pred2(X3) | pred3(X1,X3) | pred2(X1,X2))).
+fof(u5, axiom, (pred3(X3,X1) | ~pred3(X2,X3) | ~pred3(X3))).
+fof(u6, axiom, (~pred1(X2) | ~pred1(X1,X2))).
+fof(u7, axiom, (pred3(X2) | pred2(X2))).
+fof(u8, axiom, (pred1(X2) | ~pred3(X1,X2) | ~pred1(X1))).
+fof(u9, axiom, (pred2(X1) | ~pred1(X1) | pred3(X1))).
+fof(u10, axiom, (pred2(X2,X1) | pred3(X2))).

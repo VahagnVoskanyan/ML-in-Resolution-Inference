@@ -1,0 +1,37 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u1,axiom,
+    once(at_the_same_time(at(X0,X2),at(X1,X2))) | ~connect(X0,X1,X2)).
+
+cnf(u2,axiom,
+    connect(X0,X2,X1) | ~once(at_the_same_time(at(X0,X1),at(X2,X1)))).
+
+cnf(u3,axiom,
+    once(at_the_same_time(X1,X0)) | ~once(at_the_same_time(X0,X1))).
+
+cnf(u4,axiom,
+    once(at_the_same_time(X1,X0)) | ~once(at_the_same_time(X0,X1))).
+
+cnf(u5,axiom,
+    once(at_the_same_time(X0,at_the_same_time(X1,X2))) | ~once(at_the_same_time(at_the_same_time(X0,X1),X2))).
+
+cnf(u6,axiom,
+    once(at_the_same_time(at_the_same_time(X0,X1),X2)) | ~once(at_the_same_time(X0,at_the_same_time(X1,X2)))).
+
+cnf(u7,axiom,
+    once(at_the_same_time(X0,X0)) | ~once(X0)).
+
+cnf(u8,axiom,
+    once(X0) | ~once(at_the_same_time(X0,X1))).
+
+cnf(u9,axiom,
+    once(X1) | ~once(at_the_same_time(X0,X1))).
+
+cnf(u15,axiom,
+    incident_o(X1,ax3_sk1(X0)) | ~once(at(X0,X1))).
+
+cnf(u16,axiom,
+    once(at(X1,X0)) | ~incident_o(X0,ax3_sk1(X1))).
+
+cnf(u14,axiom,
+    once(at_the_same_time(X0,at(X1,ax3_sk2(X1,X0)))) | ~once(X0)).
+

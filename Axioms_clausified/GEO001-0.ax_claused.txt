@@ -1,0 +1,61 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u1,axiom,
+    X0 = X1 | ~between(X0,X1,X0)).
+
+cnf(u2,axiom,
+    between(X0,X1,X3) | ~between(X1,X3,X2) | ~between(X0,X1,X2)).
+
+cnf(u3,axiom,
+    between(X0,X2,X3) | between(X0,X3,X2) | X0 = X1 | ~between(X0,X1,X2) | ~between(X0,X1,X3)).
+
+cnf(u4,axiom,
+    equidistant(X0,X1,X1,X0)).
+
+cnf(u5,axiom,
+    X0 = X1 | ~equidistant(X0,X1,X3,X3)).
+
+cnf(u6,axiom,
+    equidistant(X3,X2,X4,X5) | ~equidistant(X0,X1,X4,X5) | ~equidistant(X0,X1,X3,X2)).
+
+cnf(u7,axiom,
+    between(X0,outer_pasch(X5,X0,X1,X3,X2),X1) | ~between(X1,X2,X3) | ~between(X0,X5,X2)).
+
+cnf(u8,axiom,
+    between(X3,X5,outer_pasch(X5,X0,X1,X3,X2)) | ~between(X1,X2,X3) | ~between(X0,X5,X2)).
+
+cnf(u9,axiom,
+    between(X0,X3,euclid1(X5,X0,X1,X3,X2)) | X0 = X2 | ~between(X1,X2,X3) | ~between(X0,X2,X5)).
+
+cnf(u10,axiom,
+    between(X0,X1,euclid2(X5,X0,X1,X3,X2)) | X0 = X2 | ~between(X1,X2,X3) | ~between(X0,X2,X5)).
+
+cnf(u11,axiom,
+    between(euclid1(X5,X0,X1,X3,X2),X5,euclid2(X5,X0,X1,X3,X2)) | X0 = X2 | ~between(X1,X2,X3) | ~between(X0,X2,X5)).
+
+cnf(u12,axiom,
+    equidistant(X3,X2,X8,X9) | X0 = X1 | ~between(X6,X7,X8) | ~between(X0,X1,X3) | ~equidistant(X1,X2,X7,X9) | ~equidistant(X0,X2,X6,X9) | ~equidistant(X1,X3,X7,X8) | ~equidistant(X0,X1,X6,X7)).
+
+cnf(u13,axiom,
+    between(X0,X1,extension(X0,X1,X5,X2))).
+
+cnf(u14,axiom,
+    equidistant(X1,extension(X0,X1,X5,X2),X5,X2)).
+
+cnf(u15,axiom,
+    ~between(lower_dimension_point_1,lower_dimension_point_2,lower_dimension_point_3)).
+
+cnf(u16,axiom,
+    ~between(lower_dimension_point_2,lower_dimension_point_3,lower_dimension_point_1)).
+
+cnf(u17,axiom,
+    ~between(lower_dimension_point_3,lower_dimension_point_1,lower_dimension_point_2)).
+
+cnf(u18,axiom,
+    X2 = X5 | between(X3,X0,X1) | between(X1,X3,X0) | between(X0,X1,X3) | ~equidistant(X3,X5,X3,X2) | ~equidistant(X1,X5,X1,X2) | ~equidistant(X0,X5,X0,X2)).
+
+cnf(u19,axiom,
+    equidistant(X2,X1,X2,continuous(X0,X1,X3,X6,X8,X2)) | ~between(X0,X1,X3) | ~between(X2,X0,X3) | ~equidistant(X2,X3,X2,X8) | ~equidistant(X2,X0,X2,X6)).
+
+cnf(u20,axiom,
+    between(X6,continuous(X0,X1,X3,X6,X8,X2),X8) | ~between(X0,X1,X3) | ~between(X2,X0,X3) | ~equidistant(X2,X3,X2,X8) | ~equidistant(X2,X0,X2,X6)).
+

@@ -1,0 +1,235 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u65,axiom,
+    accept_population(X0,other,n4) | ~accept_city(X0,suffertown)).
+
+cnf(u64,axiom,
+    accept_population(X0,native,n4) | ~accept_city(X0,suffertown)).
+
+cnf(u63,axiom,
+    accept_population(X0,muslim,n7) | ~accept_city(X0,suffertown)).
+
+cnf(u62,axiom,
+    accept_population(X0,christian,n20) | ~accept_city(X0,suffertown)).
+
+cnf(u61,axiom,
+    accept_population(X0,atheist,n65) | ~accept_city(X0,suffertown)).
+
+cnf(u60,axiom,
+    accept_city(X0,suffertown) | ~accept_population(X0,other,n4) | ~accept_population(X0,native,n4) | ~accept_population(X0,muslim,n7) | ~accept_population(X0,christian,n20) | ~accept_population(X0,atheist,n65)).
+
+cnf(u71,axiom,
+    accept_population(X0,other,n9) | ~accept_city(X0,centraltown)).
+
+cnf(u70,axiom,
+    accept_population(X0,native,n1) | ~accept_city(X0,centraltown)).
+
+cnf(u69,axiom,
+    accept_population(X0,muslim,n3) | ~accept_city(X0,centraltown)).
+
+cnf(u68,axiom,
+    accept_population(X0,christian,n23) | ~accept_city(X0,centraltown)).
+
+cnf(u67,axiom,
+    accept_population(X0,atheist,n54) | ~accept_city(X0,centraltown)).
+
+cnf(u66,axiom,
+    accept_city(X0,centraltown) | ~accept_population(X0,other,n9) | ~accept_population(X0,native,n1) | ~accept_population(X0,muslim,n3) | ~accept_population(X0,christian,n23) | ~accept_population(X0,atheist,n54)).
+
+cnf(u77,axiom,
+    accept_population(X0,other,n1) | ~accept_city(X0,sunnysideport)).
+
+cnf(u76,axiom,
+    accept_population(X0,native,n1) | ~accept_city(X0,sunnysideport)).
+
+cnf(u75,axiom,
+    accept_population(X0,muslim,n60) | ~accept_city(X0,sunnysideport)).
+
+cnf(u74,axiom,
+    accept_population(X0,christian,n8) | ~accept_city(X0,sunnysideport)).
+
+cnf(u73,axiom,
+    accept_population(X0,atheist,n30) | ~accept_city(X0,sunnysideport)).
+
+cnf(u72,axiom,
+    accept_city(X0,sunnysideport) | ~accept_population(X0,other,n1) | ~accept_population(X0,native,n1) | ~accept_population(X0,muslim,n60) | ~accept_population(X0,christian,n8) | ~accept_population(X0,atheist,n30)).
+
+cnf(u83,axiom,
+    accept_population(X0,other,n4) | ~accept_city(X0,centrallakecity)).
+
+cnf(u82,axiom,
+    accept_population(X0,native,n10) | ~accept_city(X0,centrallakecity)).
+
+cnf(u81,axiom,
+    accept_population(X0,muslim,n1) | ~accept_city(X0,centrallakecity)).
+
+cnf(u80,axiom,
+    accept_population(X0,christian,n15) | ~accept_city(X0,centrallakecity)).
+
+cnf(u79,axiom,
+    accept_population(X0,atheist,n70) | ~accept_city(X0,centrallakecity)).
+
+cnf(u78,axiom,
+    accept_city(X0,centrallakecity) | ~accept_population(X0,other,n4) | ~accept_population(X0,native,n10) | ~accept_population(X0,muslim,n1) | ~accept_population(X0,christian,n15) | ~accept_population(X0,atheist,n70)).
+
+cnf(u89,axiom,
+    accept_population(X0,other,n4) | ~accept_city(X0,stjosephburgh)).
+
+cnf(u88,axiom,
+    accept_population(X0,native,n11) | ~accept_city(X0,stjosephburgh)).
+
+cnf(u87,axiom,
+    accept_population(X0,muslim,n1) | ~accept_city(X0,stjosephburgh)).
+
+cnf(u86,axiom,
+    accept_population(X0,christian,n16) | ~accept_city(X0,stjosephburgh)).
+
+cnf(u85,axiom,
+    accept_population(X0,atheist,n68) | ~accept_city(X0,stjosephburgh)).
+
+cnf(u84,axiom,
+    accept_city(X0,stjosephburgh) | ~accept_population(X0,other,n4) | ~accept_population(X0,native,n11) | ~accept_population(X0,muslim,n1) | ~accept_population(X0,christian,n16) | ~accept_population(X0,atheist,n68)).
+
+cnf(u95,axiom,
+    accept_population(X0,other,n2) | ~accept_city(X0,northport)).
+
+cnf(u94,axiom,
+    accept_population(X0,native,n15) | ~accept_city(X0,northport)).
+
+cnf(u93,axiom,
+    accept_population(X0,muslim,n0) | ~accept_city(X0,northport)).
+
+cnf(u92,axiom,
+    accept_population(X0,christian,n13) | ~accept_city(X0,northport)).
+
+cnf(u91,axiom,
+    accept_population(X0,atheist,n70) | ~accept_city(X0,northport)).
+
+cnf(u90,axiom,
+    accept_city(X0,northport) | ~accept_population(X0,other,n2) | ~accept_population(X0,native,n15) | ~accept_population(X0,muslim,n0) | ~accept_population(X0,christian,n13) | ~accept_population(X0,atheist,n70)).
+
+cnf(u101,axiom,
+    accept_population(X0,other,n0) | ~accept_city(X0,coastvillage)).
+
+cnf(u100,axiom,
+    accept_population(X0,native,n85) | ~accept_city(X0,coastvillage)).
+
+cnf(u99,axiom,
+    accept_population(X0,muslim,n0) | ~accept_city(X0,coastvillage)).
+
+cnf(u98,axiom,
+    accept_population(X0,christian,n3) | ~accept_city(X0,coastvillage)).
+
+cnf(u97,axiom,
+    accept_population(X0,atheist,n12) | ~accept_city(X0,coastvillage)).
+
+cnf(u96,axiom,
+    accept_city(X0,coastvillage) | ~accept_population(X0,other,n0) | ~accept_population(X0,native,n85) | ~accept_population(X0,muslim,n0) | ~accept_population(X0,christian,n3) | ~accept_population(X0,atheist,n12)).
+
+cnf(u107,axiom,
+    accept_population(X0,other,n0) | ~accept_city(X0,sunsetpoint)).
+
+cnf(u106,axiom,
+    accept_population(X0,native,n100) | ~accept_city(X0,sunsetpoint)).
+
+cnf(u105,axiom,
+    accept_population(X0,muslim,n0) | ~accept_city(X0,sunsetpoint)).
+
+cnf(u104,axiom,
+    accept_population(X0,christian,n0) | ~accept_city(X0,sunsetpoint)).
+
+cnf(u103,axiom,
+    accept_population(X0,atheist,n0) | ~accept_city(X0,sunsetpoint)).
+
+cnf(u102,axiom,
+    accept_city(X0,sunsetpoint) | ~accept_population(X0,other,n0) | ~accept_population(X0,native,n100) | ~accept_population(X0,muslim,n0) | ~accept_population(X0,christian,n0) | ~accept_population(X0,atheist,n0)).
+
+cnf(u113,axiom,
+    accept_population(X0,other,n0) | ~accept_city(X0,towna)).
+
+cnf(u112,axiom,
+    accept_population(X0,native,n0) | ~accept_city(X0,towna)).
+
+cnf(u111,axiom,
+    accept_population(X0,muslim,n1) | ~accept_city(X0,towna)).
+
+cnf(u110,axiom,
+    accept_population(X0,christian,n24) | ~accept_city(X0,towna)).
+
+cnf(u109,axiom,
+    accept_population(X0,atheist,n75) | ~accept_city(X0,towna)).
+
+cnf(u108,axiom,
+    accept_city(X0,towna) | ~accept_population(X0,other,n0) | ~accept_population(X0,native,n0) | ~accept_population(X0,muslim,n1) | ~accept_population(X0,christian,n24) | ~accept_population(X0,atheist,n75)).
+
+cnf(u119,axiom,
+    accept_population(X0,other,n0) | ~accept_city(X0,citya)).
+
+cnf(u118,axiom,
+    accept_population(X0,native,n0) | ~accept_city(X0,citya)).
+
+cnf(u117,axiom,
+    accept_population(X0,muslim,n0) | ~accept_city(X0,citya)).
+
+cnf(u116,axiom,
+    accept_population(X0,christian,n25) | ~accept_city(X0,citya)).
+
+cnf(u115,axiom,
+    accept_population(X0,atheist,n75) | ~accept_city(X0,citya)).
+
+cnf(u114,axiom,
+    accept_city(X0,citya) | ~accept_population(X0,other,n0) | ~accept_population(X0,native,n0) | ~accept_population(X0,muslim,n0) | ~accept_population(X0,christian,n25) | ~accept_population(X0,atheist,n75)).
+
+cnf(u125,axiom,
+    accept_population(X0,other,n2) | ~accept_city(X0,townb)).
+
+cnf(u124,axiom,
+    accept_population(X0,native,n0) | ~accept_city(X0,townb)).
+
+cnf(u123,axiom,
+    accept_population(X0,muslim,n8) | ~accept_city(X0,townb)).
+
+cnf(u122,axiom,
+    accept_population(X0,christian,n20) | ~accept_city(X0,townb)).
+
+cnf(u121,axiom,
+    accept_population(X0,atheist,n70) | ~accept_city(X0,townb)).
+
+cnf(u120,axiom,
+    accept_city(X0,townb) | ~accept_population(X0,other,n2) | ~accept_population(X0,native,n0) | ~accept_population(X0,muslim,n8) | ~accept_population(X0,christian,n20) | ~accept_population(X0,atheist,n70)).
+
+cnf(u131,axiom,
+    accept_population(X0,other,n1) | ~accept_city(X0,cityb)).
+
+cnf(u130,axiom,
+    accept_population(X0,native,n0) | ~accept_city(X0,cityb)).
+
+cnf(u129,axiom,
+    accept_population(X0,muslim,n1) | ~accept_city(X0,cityb)).
+
+cnf(u128,axiom,
+    accept_population(X0,christian,n20) | ~accept_city(X0,cityb)).
+
+cnf(u127,axiom,
+    accept_population(X0,atheist,n78) | ~accept_city(X0,cityb)).
+
+cnf(u126,axiom,
+    accept_city(X0,cityb) | ~accept_population(X0,other,n1) | ~accept_population(X0,native,n0) | ~accept_population(X0,muslim,n1) | ~accept_population(X0,christian,n20) | ~accept_population(X0,atheist,n78)).
+
+cnf(u137,axiom,
+    accept_population(X0,other,n5) | ~accept_city(X0,townc)).
+
+cnf(u136,axiom,
+    accept_population(X0,native,n0) | ~accept_city(X0,townc)).
+
+cnf(u135,axiom,
+    accept_population(X0,muslim,n65) | ~accept_city(X0,townc)).
+
+cnf(u134,axiom,
+    accept_population(X0,christian,n0) | ~accept_city(X0,townc)).
+
+cnf(u133,axiom,
+    accept_population(X0,atheist,n30) | ~accept_city(X0,townc)).
+
+cnf(u132,axiom,
+    accept_city(X0,townc) | ~accept_population(X0,other,n5) | ~accept_population(X0,native,n0) | ~accept_population(X0,muslim,n65) | ~accept_population(X0,christian,n0) | ~accept_population(X0,atheist,n30)).
+

@@ -1,0 +1,19 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u7,axiom,
+    ~between_c(X0,X3,X2,X3)).
+
+cnf(u2,axiom,
+    part_of(ax1_sk1(X3,X2,X1,X0),X0) | ~between_c(X0,X1,X2,X3)).
+
+cnf(u3,axiom,
+    end_point(X1,ax1_sk1(X3,X2,X1,X0)) | ~between_c(X0,X1,X2,X3)).
+
+cnf(u4,axiom,
+    end_point(X3,ax1_sk1(X3,X2,X1,X0)) | ~between_c(X0,X1,X2,X3)).
+
+cnf(u5,axiom,
+    inner_point(X2,ax1_sk1(X3,X2,X1,X0)) | ~between_c(X0,X1,X2,X3)).
+
+cnf(u6,axiom,
+    between_c(X3,X0,X4,X1) | ~inner_point(X4,X2) | ~end_point(X1,X2) | ~end_point(X0,X2) | ~part_of(X2,X3) | X0 = X1).
+

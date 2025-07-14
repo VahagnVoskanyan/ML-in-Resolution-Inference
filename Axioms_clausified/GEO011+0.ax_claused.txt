@@ -1,0 +1,37 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u12,axiom,
+    s_e(X0,X1,X1,X0)).
+
+cnf(u13,axiom,
+    s_e(X2,X3,X4,X5) | ~s_e(X0,X1,X4,X5) | ~s_e(X0,X1,X2,X3)).
+
+cnf(u14,axiom,
+    X0 = X1 | ~s_e(X0,X1,X2,X2)).
+
+cnf(u16,axiom,
+    s_e(X1,ext(X0,X1,X2,X3),X2,X3)).
+
+cnf(u15,axiom,
+    s_t(X0,X1,ext(X0,X1,X2,X3))).
+
+cnf(u17,axiom,
+    s_e(X4,X6,X5,X7) | X0 = X1 | ~s_t(X2,X3,X5) | ~s_t(X0,X1,X4) | ~s_e(X1,X6,X3,X7) | ~s_e(X0,X6,X2,X7) | ~s_e(X1,X4,X3,X5) | ~s_e(X0,X1,X2,X3)).
+
+cnf(u18,axiom,
+    X0 = X1 | ~s_t(X0,X1,X0)).
+
+cnf(u20,axiom,
+    s_t(X4,ip(X0,X1,X2,X3,X4),X0) | ~s_t(X3,X4,X2) | ~s_t(X0,X1,X2)).
+
+cnf(u19,axiom,
+    s_t(X1,ip(X0,X1,X2,X3,X4),X3) | ~s_t(X3,X4,X2) | ~s_t(X0,X1,X2)).
+
+cnf(u23,axiom,
+    ~s_t(gamma,alpha,beta)).
+
+cnf(u22,axiom,
+    ~s_t(beta,gamma,alpha)).
+
+cnf(u21,axiom,
+    ~s_t(alpha,beta,gamma)).
+

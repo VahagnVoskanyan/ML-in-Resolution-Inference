@@ -1,0 +1,106 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u94,axiom,
+    apart_point_and_line(X0,X1) | ~left_apart_point(X0,reverse_line(X1))).
+
+cnf(u93,axiom,
+    apart_point_and_line(X0,X1) | ~left_apart_point(X0,X1)).
+
+cnf(u95,axiom,
+    ~distinct_points(X0,X0)).
+
+cnf(u96,axiom,
+    distinct_points(X1,X2) | distinct_points(X0,X2) | ~distinct_points(X0,X1)).
+
+cnf(u97,axiom,
+    ~distinct_lines(X0,X0)).
+
+cnf(u98,axiom,
+    distinct_lines(X1,X2) | distinct_lines(X0,X2) | ~distinct_lines(X0,X1)).
+
+cnf(u99,axiom,
+    ~unequally_directed_lines(X0,X0)).
+
+cnf(u100,axiom,
+    unequally_directed_lines(X1,X2) | unequally_directed_lines(X0,X2) | ~unequally_directed_lines(X0,X1)).
+
+cnf(u104,axiom,
+    unequally_directed_lines(X1,reverse_line(X2)) | unequally_directed_lines(X0,reverse_line(X2)) | ~unequally_directed_lines(X0,reverse_line(X1)) | ~unequally_directed_lines(X0,X1)).
+
+cnf(u103,axiom,
+    unequally_directed_lines(X1,reverse_line(X2)) | unequally_directed_lines(X0,X2) | ~unequally_directed_lines(X0,reverse_line(X1)) | ~unequally_directed_lines(X0,X1)).
+
+cnf(u102,axiom,
+    unequally_directed_lines(X1,X2) | unequally_directed_lines(X0,reverse_line(X2)) | ~unequally_directed_lines(X0,reverse_line(X1)) | ~unequally_directed_lines(X0,X1)).
+
+cnf(u101,axiom,
+    unequally_directed_lines(X1,X2) | unequally_directed_lines(X0,X2) | ~unequally_directed_lines(X0,reverse_line(X1)) | ~unequally_directed_lines(X0,X1)).
+
+cnf(u105,axiom,
+    unequally_directed_lines(X0,reverse_line(X1)) | unequally_directed_lines(X0,X1) | ~line(X1) | ~line(X0)).
+
+cnf(u106,axiom,
+    left_convergent_lines(X0,reverse_line(X1)) | left_convergent_lines(X0,X1) | ~unequally_directed_lines(X0,reverse_line(X1)) | ~unequally_directed_lines(X0,X1)).
+
+cnf(u108,axiom,
+    ~left_apart_point(X0,reverse_line(X1))).
+
+cnf(u107,axiom,
+    ~left_apart_point(X0,X1)).
+
+cnf(u110,axiom,
+    ~left_convergent_lines(X0,reverse_line(X1))).
+
+cnf(u109,axiom,
+    ~left_convergent_lines(X0,X1)).
+
+cnf(u111,axiom,
+    line(line_connecting(X0,X1)) | ~distinct_points(X0,X1) | ~point(X1) | ~point(X0)).
+
+cnf(u112,axiom,
+    point(intersection_point(X0,X1)) | ~unequally_directed_lines(X0,reverse_line(X1)) | ~unequally_directed_lines(X0,X1) | ~line(X1) | ~line(X0)).
+
+cnf(u113,axiom,
+    line(parallel_through_point(X0,X1)) | ~line(X0) | ~point(X1)).
+
+cnf(u114,axiom,
+    line(reverse_line(X0)) | ~line(X0)).
+
+cnf(u116,axiom,
+    ~apart_point_and_line(X1,line_connecting(X0,X1)) | ~distinct_points(X0,X1)).
+
+cnf(u115,axiom,
+    ~apart_point_and_line(X0,line_connecting(X0,X1)) | ~distinct_points(X0,X1)).
+
+cnf(u118,axiom,
+    ~apart_point_and_line(intersection_point(X0,X1),X1) | ~unequally_directed_lines(X0,reverse_line(X1)) | ~unequally_directed_lines(X0,X1)).
+
+cnf(u117,axiom,
+    ~apart_point_and_line(intersection_point(X0,X1),X0) | ~unequally_directed_lines(X0,reverse_line(X1)) | ~unequally_directed_lines(X0,X1)).
+
+cnf(u119,axiom,
+    ~apart_point_and_line(X0,parallel_through_point(X1,X0))).
+
+cnf(u120,axiom,
+    ~distinct_lines(X0,reverse_line(X0))).
+
+cnf(u121,axiom,
+    ~unequally_directed_lines(line_connecting(X0,X1),reverse_line(line_connecting(X1,X0)))).
+
+cnf(u122,axiom,
+    ~unequally_directed_lines(parallel_through_point(X1,X0),X1)).
+
+cnf(u123,axiom,
+    left_apart_point(X1,reverse_line(X3)) | left_apart_point(X0,reverse_line(X3)) | left_apart_point(X1,reverse_line(X2)) | left_apart_point(X0,reverse_line(X2)) | left_apart_point(X1,X3) | left_apart_point(X0,X3) | left_apart_point(X1,X2) | left_apart_point(X0,X2) | ~distinct_lines(X2,X3) | ~distinct_points(X0,X1)).
+
+cnf(u124,axiom,
+    left_convergent_lines(line_connecting(X0,X1),X2) | left_apart_point(X1,X2) | ~left_apart_point(X0,X2) | ~distinct_points(X0,X1)).
+
+cnf(u125,axiom,
+    left_apart_point(X1,X2) | distinct_points(X0,X1) | ~left_apart_point(X0,X2)).
+
+cnf(u126,axiom,
+    left_apart_point(X0,reverse_line(X2)) | distinct_lines(X1,X2) | ~unequally_directed_lines(X1,X2) | ~left_apart_point(X0,X1)).
+
+cnf(u127,axiom,
+    left_convergent_lines(X0,X2) | unequally_directed_lines(X1,X2) | ~left_convergent_lines(X0,X1)).
+

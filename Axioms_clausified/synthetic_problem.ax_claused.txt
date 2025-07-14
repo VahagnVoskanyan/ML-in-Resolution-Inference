@@ -1,0 +1,16 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u1,axiom,
+    ~p1(X2,X1) | p2(c,X1) | p2(X0,a)).
+
+cnf(u2,axiom,
+    ~p2(a,a)).
+
+cnf(u3,axiom,
+    ~p1(X5,X2)).
+
+cnf(u4,axiom,
+    ~p1(X2,X1)).
+
+cnf(u5,axiom,
+    p1(X2,X1)).
+

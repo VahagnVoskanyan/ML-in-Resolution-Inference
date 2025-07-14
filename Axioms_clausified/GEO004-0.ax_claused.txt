@@ -1,0 +1,130 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u1,axiom,
+    incident_c(X2,X1) | ~incident_c(X2,X0) | ~part_of(X0,X1)).
+
+cnf(u2,axiom,
+    part_of(X0,X1) | incident_c(ax0_sk1(X0,X1),X0)).
+
+cnf(u3,axiom,
+    part_of(X0,X1) | ~incident_c(ax0_sk1(X0,X1),X1)).
+
+cnf(u49,axiom,
+    incident_c(X3,X2) | incident_c(X3,X1) | ~incident_c(X3,sum(X1,X2))).
+
+cnf(u50,axiom,
+    incident_c(X3,sum(X1,X2)) | ~incident_c(X3,X1)).
+
+cnf(u51,axiom,
+    incident_c(X3,sum(X1,X2)) | ~incident_c(X3,X2)).
+
+cnf(u7,axiom,
+    sum(X1,X0) = X2 | incident_c(ax0_sk2(X0,X1,X2),X0) | incident_c(ax0_sk2(X0,X1,X2),X1) | incident_c(ax0_sk2(X0,X1,X2),X2)).
+
+cnf(u11,axiom,
+    sum(X1,X0) = X2 | ~incident_c(ax0_sk2(X0,X1,X2),X2) | ~incident_c(ax0_sk2(X0,X1,X2),X1)).
+
+cnf(u12,axiom,
+    sum(X1,X0) = X2 | ~incident_c(ax0_sk2(X0,X1,X2),X2) | ~incident_c(ax0_sk2(X0,X1,X2),X0)).
+
+cnf(u13,axiom,
+    incident_c(X0,X1) | ~end_point(X0,X1)).
+
+cnf(u14,axiom,
+    part_of(X3,X2) | part_of(X2,X3) | ~incident_c(X0,X3) | ~incident_c(X0,X2) | ~part_of(X3,X1) | ~part_of(X2,X1) | ~end_point(X0,X1)).
+
+cnf(u15,axiom,
+    end_point(X0,X1) | part_of(ax0_sk3(X1,X0),X1) | ~incident_c(X0,X1)).
+
+cnf(u16,axiom,
+    end_point(X0,X1) | part_of(ax0_sk4(X1,X0),X1) | ~incident_c(X0,X1)).
+
+cnf(u17,axiom,
+    end_point(X0,X1) | incident_c(X0,ax0_sk3(X1,X0)) | ~incident_c(X0,X1)).
+
+cnf(u18,axiom,
+    end_point(X0,X1) | incident_c(X0,ax0_sk4(X1,X0)) | ~incident_c(X0,X1)).
+
+cnf(u19,axiom,
+    end_point(X0,X1) | ~part_of(ax0_sk3(X1,X0),ax0_sk4(X1,X0)) | ~incident_c(X0,X1)).
+
+cnf(u20,axiom,
+    end_point(X0,X1) | ~part_of(ax0_sk4(X1,X0),ax0_sk3(X1,X0)) | ~incident_c(X0,X1)).
+
+cnf(u21,axiom,
+    incident_c(X0,X1) | ~inner_point(X0,X1)).
+
+cnf(u22,axiom,
+    ~end_point(X0,X1) | ~inner_point(X0,X1)).
+
+cnf(u23,axiom,
+    inner_point(X0,X1) | end_point(X0,X1) | ~incident_c(X0,X1)).
+
+cnf(u24,axiom,
+    incident_c(X0,X1) | ~meet(X0,X1,X2)).
+
+cnf(u25,axiom,
+    incident_c(X0,X2) | ~meet(X0,X1,X2)).
+
+cnf(u26,axiom,
+    end_point(X3,X1) | ~incident_c(X3,X2) | ~incident_c(X3,X1) | ~meet(X0,X1,X2)).
+
+cnf(u27,axiom,
+    end_point(X3,X2) | ~incident_c(X3,X2) | ~incident_c(X3,X1) | ~meet(X0,X1,X2)).
+
+cnf(u28,axiom,
+    meet(X0,X1,X2) | incident_c(ax0_sk5(X2,X1,X0),X1) | ~incident_c(X0,X2) | ~incident_c(X0,X1)).
+
+cnf(u29,axiom,
+    meet(X0,X1,X2) | incident_c(ax0_sk5(X2,X1,X0),X2) | ~incident_c(X0,X2) | ~incident_c(X0,X1)).
+
+cnf(u30,axiom,
+    meet(X0,X1,X2) | ~end_point(ax0_sk5(X2,X1,X0),X2) | ~end_point(ax0_sk5(X2,X1,X0),X1) | ~incident_c(X0,X2) | ~incident_c(X0,X1)).
+
+cnf(u31,axiom,
+    ~end_point(X1,X0) | ~closed(X0)).
+
+cnf(u32,axiom,
+    closed(X0) | end_point(ax0_sk6(X0),X0)).
+
+cnf(u33,axiom,
+    end_point(ax0_sk7(X0),X0) | ~open(X0)).
+
+cnf(u34,axiom,
+    open(X1) | ~end_point(X0,X1)).
+
+cnf(u35,axiom,
+    open(X0) | X0 = X1 | ~part_of(X0,X1)).
+
+cnf(u36,axiom,
+    part_of(X3,X0) | part_of(X0,X3) | part_of(X2,X0) | part_of(X0,X2) | part_of(X3,X2) | part_of(X2,X3) | ~end_point(X4,X3) | ~end_point(X4,X2) | ~end_point(X4,X0) | ~part_of(X3,X1) | ~part_of(X2,X1) | ~part_of(X0,X1)).
+
+cnf(u37,axiom,
+    inner_point(ax0_sk8(X0),X0)).
+
+cnf(u38,axiom,
+    meet(X0,ax0_sk9(X0,X1),ax0_sk10(X0,X1)) | ~inner_point(X0,X1)).
+
+cnf(u39,axiom,
+    sum(ax0_sk9(X0,X1),ax0_sk10(X0,X1)) = X1 | ~inner_point(X0,X1)).
+
+cnf(u40,axiom,
+    X2 = X3 | X0 = X3 | X0 = X2 | ~end_point(X3,X1) | ~end_point(X2,X1) | ~end_point(X0,X1)).
+
+cnf(u41,axiom,
+    end_point(ax0_sk11(X0,X1),X1) | ~end_point(X0,X1)).
+
+cnf(u42,axiom,
+    ax0_sk11(X0,X1) != X0 | ~end_point(X0,X1)).
+
+cnf(u52,axiom,
+    meet(X4,X2,X3) | ~end_point(X4,X2) | ~meet(X1,X2,X3) | ~closed(sum(X2,X3))).
+
+cnf(u44,axiom,
+    sum(X1,X2) = ax0_sk12(X2,X1) | ~meet(X0,X1,X2)).
+
+cnf(u45,axiom,
+    X0 = X1 | incident_c(ax0_sk13(X0,X1),X0) | incident_c(ax0_sk13(X0,X1),X1)).
+
+cnf(u48,axiom,
+    X0 = X1 | ~incident_c(ax0_sk13(X0,X1),X1) | ~incident_c(ax0_sk13(X0,X1),X0)).
+

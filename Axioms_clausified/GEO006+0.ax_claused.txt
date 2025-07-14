@@ -1,0 +1,43 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u34,axiom,
+    ~distinct_points(X0,X0)).
+
+cnf(u35,axiom,
+    ~distinct_lines(X0,X0)).
+
+cnf(u36,axiom,
+    ~convergent_lines(X0,X0)).
+
+cnf(u37,axiom,
+    distinct_points(X1,X2) | distinct_points(X0,X2) | ~distinct_points(X0,X1)).
+
+cnf(u38,axiom,
+    distinct_lines(X1,X2) | distinct_lines(X0,X2) | ~distinct_lines(X0,X1)).
+
+cnf(u39,axiom,
+    convergent_lines(X1,X2) | convergent_lines(X0,X2) | ~convergent_lines(X0,X1)).
+
+cnf(u40,axiom,
+    ~apart_point_and_line(X0,line_connecting(X0,X1)) | ~distinct_points(X0,X1)).
+
+cnf(u41,axiom,
+    ~apart_point_and_line(X1,line_connecting(X0,X1)) | ~distinct_points(X0,X1)).
+
+cnf(u42,axiom,
+    ~apart_point_and_line(intersection_point(X0,X1),X0) | ~convergent_lines(X0,X1)).
+
+cnf(u43,axiom,
+    ~apart_point_and_line(intersection_point(X0,X1),X1) | ~convergent_lines(X0,X1)).
+
+cnf(u44,axiom,
+    apart_point_and_line(X1,X3) | apart_point_and_line(X1,X2) | apart_point_and_line(X0,X3) | apart_point_and_line(X0,X2) | ~distinct_lines(X2,X3) | ~distinct_points(X0,X1)).
+
+cnf(u45,axiom,
+    apart_point_and_line(X2,X1) | distinct_points(X0,X2) | ~apart_point_and_line(X0,X1)).
+
+cnf(u46,axiom,
+    apart_point_and_line(X0,X2) | distinct_lines(X1,X2) | ~apart_point_and_line(X0,X1)).
+
+cnf(u47,axiom,
+    convergent_lines(X0,X2) | distinct_lines(X1,X2) | ~convergent_lines(X0,X1)).
+

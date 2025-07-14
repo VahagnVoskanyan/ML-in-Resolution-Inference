@@ -1,0 +1,13 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u1,axiom,
+    colinear(X0,X1,X2) | ~between(X0,X1,X2)).
+
+cnf(u2,axiom,
+    colinear(X0,X1,X2) | ~between(X1,X2,X0)).
+
+cnf(u3,axiom,
+    colinear(X0,X1,X2) | ~between(X2,X0,X1)).
+
+cnf(u4,axiom,
+    between(X2,X0,X1) | between(X1,X2,X0) | between(X0,X1,X2) | ~colinear(X0,X1,X2)).
+

@@ -1,0 +1,20 @@
+fof(ax1, axiom, (pred4(X1,X2,X1) | pred5(X1,X1,X1))).
+fof(ax2, axiom, (pred5(X2,X0) | pred2(X1,X0))).
+fof(ax3, axiom, (~pred2(X2,X0) | ~pred4(X0) | ~pred5(X0))).
+fof(ax4, axiom, (~pred3(X0,X0) | pred1(X2,X2))).
+fof(ax5, axiom, (~pred4(X2,X1) | ~pred3(X1,X2,X2) | pred5(X0))).
+fof(ax6, axiom, (~pred3(X0,X2) | pred3(X1))).
+fof(ax7, axiom, (pred2(X0) | ~pred3(X0,X1) | pred5(X0,X0) | pred3(X1,X0))).
+fof(ax8, axiom, (~pred3(X2,X0) | ~pred5(X0,X2,X0) | ~pred1(X2,X2) | pred5(X0,X1) | ~pred4(X0,X2))).
+fof(ax9, axiom, (~pred2(X2) | pred5(X2,X2) | pred3(X0,X1,X2) | pred2(X0,X0,X0))).
+fof(ax10, axiom, (~pred1(X0) | pred5(X2,X2,X2) | ~pred5(X2,X1) | ~pred1(X0))).
+fof(ax11, axiom, (pred1(X2) | pred4(X1))).
+fof(ax12, axiom, (pred1(X2,X0) | pred5(X1))).
+fof(ax13, axiom, (pred3(X2,X0) | ~pred1(X1,X2) | pred4(X0,X0,X1))).
+fof(ax14, axiom, (~pred5(X0,X2) | pred3(X2,X1,X2) | ~pred2(X1,X0))).
+fof(ax15, axiom, (pred3(X2,X0,X1) | ~pred1(X1) | ~pred1(X2) | ~pred4(X1,X0))).
+fof(ax16, axiom, (~pred1(X2,X1) | pred2(X1,X0))).
+fof(ax17, axiom, (~pred3(X1,X1) | ~pred4(X2) | pred5(X1) | ~pred2(X1) | pred3(X2,X0,X2))).
+fof(ax18, axiom, (~pred2(X2,X0,X0) | pred5(X1,X1) | pred5(X0,X2) | pred3(X2,X1) | pred2(X0))).
+fof(ax19, axiom, (pred5(X0,X0,X1) | ~pred4(X2) | ~pred2(X0,X0) | pred1(X2,X2,X2) | ~pred3(X1,X0))).
+fof(ax20, axiom, (~pred4(X1,X0,X2) | ~pred1(X1))).

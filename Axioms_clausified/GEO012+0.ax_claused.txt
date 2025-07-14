@@ -1,0 +1,340 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u353,axiom,
+    coll(X0,X2,X1) | ~coll(X0,X1,X2)).
+
+cnf(u354,axiom,
+    coll(X1,X0,X2) | ~coll(X0,X1,X2)).
+
+cnf(u355,axiom,
+    coll(X2,X3,X0) | ~coll(X0,X1,X3) | ~coll(X0,X1,X2)).
+
+cnf(u356,axiom,
+    para(X0,X1,X3,X2) | ~para(X0,X1,X2,X3)).
+
+cnf(u357,axiom,
+    para(X2,X3,X0,X1) | ~para(X0,X1,X2,X3)).
+
+cnf(u358,axiom,
+    para(X0,X1,X4,X5) | ~para(X2,X3,X4,X5) | ~para(X0,X1,X2,X3)).
+
+cnf(u359,axiom,
+    perp(X0,X1,X3,X2) | ~perp(X0,X1,X2,X3)).
+
+cnf(u360,axiom,
+    perp(X2,X3,X0,X1) | ~perp(X0,X1,X2,X3)).
+
+cnf(u361,axiom,
+    para(X0,X1,X4,X5) | ~perp(X2,X3,X4,X5) | ~perp(X0,X1,X2,X3)).
+
+cnf(u362,axiom,
+    perp(X0,X1,X4,X5) | ~perp(X2,X3,X4,X5) | ~para(X0,X1,X2,X3)).
+
+cnf(u363,axiom,
+    midp(X2,X0,X1) | ~midp(X2,X1,X0)).
+
+cnf(u364,axiom,
+    circle(X3,X0,X1,X2) | ~cong(X3,X0,X3,X2) | ~cong(X3,X0,X3,X1)).
+
+cnf(u365,axiom,
+    cyclic(X0,X1,X2,X3) | ~cong(X4,X0,X4,X3) | ~cong(X4,X0,X4,X2) | ~cong(X4,X0,X4,X1)).
+
+cnf(u366,axiom,
+    cyclic(X0,X1,X3,X2) | ~cyclic(X0,X1,X2,X3)).
+
+cnf(u367,axiom,
+    cyclic(X0,X2,X1,X3) | ~cyclic(X0,X1,X2,X3)).
+
+cnf(u368,axiom,
+    cyclic(X1,X0,X2,X3) | ~cyclic(X0,X1,X2,X3)).
+
+cnf(u369,axiom,
+    cyclic(X1,X2,X3,X4) | ~cyclic(X0,X1,X2,X4) | ~cyclic(X0,X1,X2,X3)).
+
+cnf(u370,axiom,
+    eqangle(X1,X0,X2,X3,X4,X5,X6,X7) | ~eqangle(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u371,axiom,
+    eqangle(X2,X3,X0,X1,X6,X7,X4,X5) | ~eqangle(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u372,axiom,
+    eqangle(X4,X5,X6,X7,X0,X1,X2,X3) | ~eqangle(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u373,axiom,
+    eqangle(X0,X1,X4,X5,X2,X3,X6,X7) | ~eqangle(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u374,axiom,
+    eqangle(X0,X1,X2,X3,X8,X9,X10,X11) | ~eqangle(X4,X5,X6,X7,X8,X9,X10,X11) | ~eqangle(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u375,axiom,
+    cong(X0,X1,X3,X2) | ~cong(X0,X1,X2,X3)).
+
+cnf(u376,axiom,
+    cong(X2,X3,X0,X1) | ~cong(X0,X1,X2,X3)).
+
+cnf(u377,axiom,
+    cong(X0,X1,X4,X5) | ~cong(X2,X3,X4,X5) | ~cong(X0,X1,X2,X3)).
+
+cnf(u378,axiom,
+    eqratio(X1,X0,X2,X3,X4,X5,X6,X7) | ~eqratio(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u379,axiom,
+    eqratio(X2,X3,X0,X1,X6,X7,X4,X5) | ~eqratio(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u380,axiom,
+    eqratio(X4,X5,X6,X7,X0,X1,X2,X3) | ~eqratio(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u381,axiom,
+    eqratio(X0,X1,X4,X5,X2,X3,X6,X7) | ~eqratio(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u382,axiom,
+    eqratio(X0,X1,X2,X3,X4,X5,X6,X7) | ~eqratio(X8,X9,X10,X11,X4,X5,X6,X7) | ~eqratio(X0,X1,X2,X3,X8,X9,X10,X11)).
+
+cnf(u383,axiom,
+    simtri(X0,X1,X2,X3,X4,X5) | ~simtri(X0,X2,X1,X3,X5,X4)).
+
+cnf(u384,axiom,
+    simtri(X0,X1,X2,X3,X4,X5) | ~simtri(X1,X0,X2,X4,X3,X5)).
+
+cnf(u385,axiom,
+    simtri(X0,X1,X2,X3,X4,X5) | ~simtri(X3,X4,X5,X0,X1,X2)).
+
+cnf(u386,axiom,
+    simtri(X0,X1,X2,X6,X7,X8) | ~simtri(X3,X4,X5,X6,X7,X8) | ~simtri(X0,X1,X2,X3,X4,X5)).
+
+cnf(u387,axiom,
+    contri(X0,X1,X2,X3,X4,X5) | ~contri(X0,X2,X1,X3,X5,X4)).
+
+cnf(u388,axiom,
+    contri(X0,X1,X2,X3,X4,X5) | ~contri(X1,X0,X2,X4,X3,X5)).
+
+cnf(u389,axiom,
+    contri(X0,X1,X2,X3,X4,X5) | ~contri(X3,X4,X5,X0,X1,X2)).
+
+cnf(u390,axiom,
+    contri(X0,X1,X2,X6,X7,X8) | ~contri(X3,X4,X5,X6,X7,X8) | ~contri(X0,X1,X2,X3,X4,X5)).
+
+cnf(u391,axiom,
+    para(X0,X1,X2,X3) | ~eqangle(X0,X1,X4,X5,X2,X3,X4,X5)).
+
+cnf(u392,axiom,
+    eqangle(X0,X1,X4,X5,X2,X3,X4,X5) | ~para(X0,X1,X2,X3)).
+
+cnf(u393,axiom,
+    eqangle(X2,X0,X2,X1,X3,X0,X3,X1) | ~cyclic(X0,X1,X2,X3)).
+
+cnf(u394,axiom,
+    cyclic(X0,X1,X2,X3) | coll(X2,X3,X0) | ~eqangle(X2,X0,X2,X1,X3,X0,X3,X1)).
+
+cnf(u395,axiom,
+    cyclic(X0,X1,X2,X3) | ~coll(X2,X3,X1) | ~eqangle(X2,X0,X2,X1,X3,X0,X3,X1)).
+
+cnf(u396,axiom,
+    cong(X0,X1,X3,X4) | ~eqangle(X2,X0,X2,X1,X5,X3,X5,X4) | ~cyclic(X0,X1,X2,X5) | ~cyclic(X0,X1,X2,X4) | ~cyclic(X0,X1,X2,X3)).
+
+cnf(u397,axiom,
+    para(X3,X4,X1,X2) | ~midp(X4,X0,X2) | ~midp(X3,X0,X1)).
+
+cnf(u398,axiom,
+    midp(X4,X0,X2) | ~coll(X4,X0,X2) | ~para(X3,X4,X1,X2) | ~midp(X3,X0,X1)).
+
+cnf(u399,axiom,
+    eqangle(X2,X0,X0,X1,X0,X1,X2,X1) | ~cong(X2,X0,X2,X1)).
+
+cnf(u400,axiom,
+    cong(X2,X0,X2,X1) | coll(X2,X0,X1) | ~eqangle(X2,X0,X0,X1,X0,X1,X2,X1)).
+
+cnf(u401,axiom,
+    eqangle(X0,X4,X0,X1,X2,X0,X2,X1) | ~perp(X3,X0,X0,X4) | ~circle(X3,X0,X1,X2)).
+
+cnf(u402,axiom,
+    perp(X3,X0,X0,X4) | ~eqangle(X0,X4,X0,X1,X2,X0,X2,X1) | ~circle(X3,X0,X1,X2)).
+
+cnf(u403,axiom,
+    eqangle(X0,X1,X0,X2,X3,X1,X3,X4) | ~midp(X4,X1,X2) | ~circle(X3,X0,X1,X2)).
+
+cnf(u404,axiom,
+    midp(X4,X1,X2) | ~eqangle(X0,X1,X0,X2,X3,X1,X3,X4) | ~coll(X4,X1,X2) | ~circle(X3,X0,X1,X2)).
+
+cnf(u405,axiom,
+    cong(X0,X3,X1,X3) | ~midp(X3,X0,X2) | ~perp(X0,X1,X1,X2)).
+
+cnf(u406,axiom,
+    perp(X0,X1,X1,X2) | ~coll(X3,X0,X2) | ~circle(X3,X0,X1,X2)).
+
+cnf(u407,axiom,
+    eqangle(X0,X3,X2,X3,X2,X3,X2,X1) | ~para(X0,X1,X2,X3) | ~cyclic(X0,X1,X2,X3)).
+
+cnf(u408,axiom,
+    cong(X3,X0,X3,X1) | ~perp(X3,X2,X0,X1) | ~midp(X2,X0,X1)).
+
+cnf(u409,axiom,
+    perp(X0,X1,X2,X3) | ~cong(X0,X3,X1,X3) | ~cong(X0,X2,X1,X2)).
+
+cnf(u410,axiom,
+    perp(X2,X0,X0,X3) | ~cyclic(X0,X1,X2,X3) | ~cong(X0,X3,X1,X3) | ~cong(X0,X2,X1,X2)).
+
+cnf(u411,axiom,
+    simtri(X0,X1,X2,X3,X4,X5) | coll(X0,X1,X2) | ~eqangle(X0,X2,X1,X2,X3,X5,X4,X5) | ~eqangle(X0,X1,X1,X2,X3,X4,X4,X5)).
+
+cnf(u412,axiom,
+    eqratio(X0,X1,X0,X2,X3,X4,X3,X5) | ~simtri(X0,X1,X2,X3,X4,X5)).
+
+cnf(u413,axiom,
+    eqangle(X0,X1,X1,X2,X3,X4,X4,X5) | ~simtri(X0,X1,X2,X3,X4,X5)).
+
+cnf(u414,axiom,
+    contri(X0,X1,X2,X3,X4,X5) | ~cong(X0,X1,X3,X4) | ~simtri(X0,X1,X2,X3,X4,X5)).
+
+cnf(u415,axiom,
+    cong(X0,X1,X3,X4) | ~contri(X0,X1,X2,X3,X4,X5)).
+
+cnf(u416,axiom,
+    para(X0,X2,X1,X3) | ~midp(X4,X2,X3) | ~midp(X4,X0,X1)).
+
+cnf(u417,axiom,
+    midp(X4,X2,X3) | ~para(X0,X3,X1,X2) | ~para(X0,X2,X1,X3) | ~midp(X4,X0,X1)).
+
+cnf(u418,axiom,
+    eqratio(X4,X0,X0,X2,X4,X1,X1,X3) | ~coll(X4,X1,X3) | ~coll(X4,X0,X2) | ~para(X0,X1,X2,X3)).
+
+cnf(u419,axiom,
+    coll(X0,X1,X2) | ~para(X0,X1,X0,X2)).
+
+cnf(u420,axiom,
+    midp(X0,X1,X2) | ~coll(X0,X1,X2) | ~cong(X0,X1,X0,X2)).
+
+cnf(u421,axiom,
+    cong(X0,X1,X0,X2) | ~midp(X0,X1,X2)).
+
+cnf(u422,axiom,
+    coll(X0,X1,X2) | ~midp(X0,X1,X2)).
+
+cnf(u423,axiom,
+    eqratio(X4,X0,X0,X1,X5,X2,X2,X3) | ~midp(X5,X2,X3) | ~midp(X4,X0,X1)).
+
+cnf(u424,axiom,
+    perp(X0,X1,X2,X3) | para(X0,X1,X2,X3) | ~eqangle(X0,X1,X2,X3,X2,X3,X0,X1)).
+
+cnf(u425,axiom,
+    para(X0,X1,X2,X3) | perp(X0,X1,X2,X3) | ~eqangle(X0,X1,X2,X3,X2,X3,X0,X1)).
+
+cnf(u426,axiom,
+    para(X0,X1,X2,X3) | ~para(X4,X5,X6,X7) | ~eqangle(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u427,axiom,
+    perp(X0,X1,X2,X3) | ~perp(X4,X5,X6,X7) | ~eqangle(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u428,axiom,
+    cong(X0,X1,X2,X3) | ~cong(X4,X5,X6,X7) | ~eqratio(X0,X1,X2,X3,X4,X5,X6,X7)).
+
+cnf(u430,axiom,
+    coll(sK0(X0,X1,X2,X3),X2,X3) | ~eqangle(X3,X2,X1,X2,X1,X2,X0,X2) | ~perp(X2,X1,X1,X0)).
+
+cnf(u429,axiom,
+    coll(sK0(X0,X1,X2,X3),X0,X1) | ~eqangle(X3,X2,X1,X2,X1,X2,X0,X2) | ~perp(X2,X1,X1,X0)).
+
+cnf(u432,axiom,
+    coll(sK1(X0,X1,X2,X3),X2,X3) | ~eqangle(X0,X2,X2,X3,X2,X3,X2,X1) | ~cong(X2,X0,X2,X1)).
+
+cnf(u431,axiom,
+    coll(X1,X0,sK1(X0,X1,X2,X3)) | ~eqangle(X0,X2,X2,X3,X2,X3,X2,X1) | ~cong(X2,X0,X2,X1)).
+
+cnf(u434,axiom,
+    coll(sK2(X0,X1,X2,X3),X2,X3) | ~eqangle(X0,X2,X2,X3,X2,X3,X2,X1) | ~perp(X2,X3,X0,X1)).
+
+cnf(u433,axiom,
+    coll(X1,X0,sK2(X0,X1,X2,X3)) | ~eqangle(X0,X2,X2,X3,X2,X3,X2,X1) | ~perp(X2,X3,X0,X1)).
+
+cnf(u436,axiom,
+    coll(sK3(X0,X1,X2,X3),X2,X3) | ~cong(X2,X0,X2,X1) | ~perp(X2,X3,X0,X1)).
+
+cnf(u435,axiom,
+    coll(X1,X0,sK3(X0,X1,X2,X3)) | ~cong(X2,X0,X2,X1) | ~perp(X2,X3,X0,X1)).
+
+cnf(u438,axiom,
+    cyclic(X3,X1,X2,sK4(X0,X1,X2,X3,X4)) | coll(X0,X1,X2) | ~eqangle(X0,X2,X1,X2,X0,X3,X1,X4)).
+
+cnf(u437,axiom,
+    eqangle(X0,X2,X1,X2,X0,sK4(X0,X1,X2,X3,X4),X1,sK4(X0,X1,X2,X3,X4)) | coll(X0,X1,X2) | ~eqangle(X0,X2,X1,X2,X0,X3,X1,X4)).
+
+cnf(u441,axiom,
+    para(sK5(X0,X1,X2,X3,X4,X5),X5,X0,X2) | ~midp(X5,X2,X3) | ~midp(X4,X0,X1)).
+
+cnf(u440,axiom,
+    para(sK5(X0,X1,X2,X3,X4,X5),X4,X1,X3) | ~midp(X5,X2,X3) | ~midp(X4,X0,X1)).
+
+cnf(u439,axiom,
+    midp(sK5(X0,X1,X2,X3,X4,X5),X0,X3) | ~midp(X5,X2,X3) | ~midp(X4,X0,X1)).
+
+cnf(u442,axiom,
+    midp(sK6(X0,X1,X2,X3,X4,X5,X6),X0,X6) | ~coll(X3,X0,X1) | ~coll(X2,X0,X1) | ~midp(X5,X2,X3) | ~midp(X4,X0,X1)).
+
+cnf(u444,axiom,
+    coll(sK7(X0,X1,X2,X3,X4,X5),X5,X4) | ~coll(X2,X3,X4) | ~para(X0,X2,X1,X3) | ~para(X0,X2,X4,X5) | ~midp(X5,X0,X1)).
+
+cnf(u443,axiom,
+    coll(sK7(X0,X1,X2,X3,X4,X5),X0,X3) | ~coll(X2,X3,X4) | ~para(X0,X2,X1,X3) | ~para(X0,X2,X4,X5) | ~midp(X5,X0,X1)).
+
+cnf(u447,axiom,
+    cong(X1,X2,X1,sK8(X0,X1,X2,X3,X4)) | ~perp(X0,X1,X1,X4) | ~cong(X4,X2,X4,X3)).
+
+cnf(u446,axiom,
+    para(sK8(X0,X1,X2,X3,X4),X2,X0,X1) | ~perp(X0,X1,X1,X4) | ~cong(X4,X2,X4,X3)).
+
+cnf(u445,axiom,
+    cong(X4,X2,X4,sK8(X0,X1,X2,X3,X4)) | ~perp(X0,X1,X1,X4) | ~cong(X4,X2,X4,X3)).
+
+cnf(u451,axiom,
+    perp(X1,sK10(X0,X1,X2,X3),X2,X0) | ~perp(X1,X3,X0,X2) | ~perp(X0,X3,X1,X2)).
+
+cnf(u450,axiom,
+    coll(sK10(X0,X1,X2,X3),X2,X0) | ~perp(X1,X3,X0,X2) | ~perp(X0,X3,X1,X2)).
+
+cnf(u449,axiom,
+    perp(X0,sK9(X0,X1,X2,X3),X2,X1) | ~perp(X1,X3,X0,X2) | ~perp(X0,X3,X1,X2)).
+
+cnf(u448,axiom,
+    coll(sK9(X0,X1,X2,X3),X2,X1) | ~perp(X1,X3,X0,X2) | ~perp(X0,X3,X1,X2)).
+
+cnf(u452,axiom,
+    perp(sK11(X0,X1,X2,X3),X0,X0,X3) | ~circle(X3,X0,X1,X2)).
+
+cnf(u456,axiom,
+    cong(sK13(X0,X1,X2,X3,X4,X5),X5,X5,X0) | X4 = X5 | ~cong(X5,X0,X5,X1) | ~cong(X4,X0,X4,X3) | ~circle(X4,X0,X1,X2)).
+
+cnf(u455,axiom,
+    coll(sK13(X0,X1,X2,X3,X4,X5),X1,X3) | X4 = X5 | ~cong(X5,X0,X5,X1) | ~cong(X4,X0,X4,X3) | ~circle(X4,X0,X1,X2)).
+
+cnf(u454,axiom,
+    cong(sK12(X0,X1,X2,X3,X4,X5),X5,X5,X0) | X4 = X5 | ~cong(X5,X0,X5,X1) | ~cong(X4,X0,X4,X3) | ~circle(X4,X0,X1,X2)).
+
+cnf(u453,axiom,
+    coll(sK12(X0,X1,X2,X3,X4,X5),X0,X2) | X4 = X5 | ~cong(X5,X0,X5,X1) | ~cong(X4,X0,X4,X3) | ~circle(X4,X0,X1,X2)).
+
+cnf(u457,axiom,
+    circle(sK14(X0,X1,X2,X3,X4),X0,X1,X2) | ~midp(X4,X0,X1) | ~para(X0,X1,X2,X3) | ~cyclic(X0,X1,X2,X3)).
+
+cnf(u458,axiom,
+    circle(sK15(X0,X1,X2,X3),X0,X1,X2) | ~cyclic(X0,X1,X2,X3) | ~perp(X0,X2,X2,X1)).
+
+cnf(u460,axiom,
+    perp(sK16(X0,X1,X2,X3,X4),X0,X3,X4) | ~coll(X1,X3,X4) | ~perp(X0,X2,X2,X1)).
+
+cnf(u459,axiom,
+    coll(sK16(X0,X1,X2,X3,X4),X3,X4) | ~coll(X1,X3,X4) | ~perp(X0,X2,X2,X1)).
+
+cnf(u461,axiom,
+    midp(sK17(X0,X1,X2,X3,X4),X0,X2) | ~midp(X4,X1,X3) | ~perp(X2,X0,X2,X3) | ~perp(X0,X1,X0,X2)).
+
+cnf(u463,axiom,
+    cong(X2,X0,X2,sK18(X0,X1,X2)) | ~perp(X0,X2,X2,X1) | ~cong(X2,X0,X2,X1)).
+
+cnf(u462,axiom,
+    coll(X0,X2,sK18(X0,X1,X2)) | ~perp(X0,X2,X2,X1) | ~cong(X2,X0,X2,X1)).
+
+cnf(u465,axiom,
+    coll(sK19(X0,X1,X2,X3,X4,X5),X2,X3) | ~coll(X5,X0,X1) | ~coll(X4,X1,X3) | ~coll(X4,X0,X2) | ~para(X0,X1,X2,X3)).
+
+cnf(u464,axiom,
+    coll(X4,X5,sK19(X0,X1,X2,X3,X4,X5)) | ~coll(X5,X0,X1) | ~coll(X4,X1,X3) | ~coll(X4,X0,X2) | ~para(X0,X1,X2,X3)).
+

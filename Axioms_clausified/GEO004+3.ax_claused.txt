@@ -1,0 +1,31 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u30,axiom,
+    once(at_the_same_time(X0,X1)) | ~once(at_the_same_time(X1,X0))).
+
+cnf(u29,axiom,
+    once(at_the_same_time(X1,X0)) | ~once(at_the_same_time(X0,X1))).
+
+cnf(u32,axiom,
+    once(at_the_same_time(at_the_same_time(X0,X1),X2)) | ~once(at_the_same_time(X0,at_the_same_time(X1,X2)))).
+
+cnf(u31,axiom,
+    once(at_the_same_time(X0,at_the_same_time(X1,X2))) | ~once(at_the_same_time(at_the_same_time(X0,X1),X2))).
+
+cnf(u33,axiom,
+    once(at_the_same_time(X0,X0)) | ~once(X0)).
+
+cnf(u35,axiom,
+    once(X1) | ~once(at_the_same_time(X0,X1))).
+
+cnf(u34,axiom,
+    once(X0) | ~once(at_the_same_time(X0,X1))).
+
+cnf(u40,axiom,
+    once(at(X0,X1)) | ~incident_o(X1,sK0(X0))).
+
+cnf(u41,axiom,
+    incident_o(X1,sK0(X0)) | ~once(at(X0,X1))).
+
+cnf(u39,axiom,
+    once(at_the_same_time(X0,at(X1,sK1(X0,X1)))) | ~once(X0)).
+

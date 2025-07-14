@@ -1,0 +1,82 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u54,axiom,
+    rdn_non_zero_digit(rdnn(n1))).
+
+cnf(u55,axiom,
+    rdn_non_zero_digit(rdnn(n2))).
+
+cnf(u56,axiom,
+    rdn_non_zero_digit(rdnn(n3))).
+
+cnf(u57,axiom,
+    rdn_non_zero_digit(rdnn(n4))).
+
+cnf(u58,axiom,
+    rdn_non_zero_digit(rdnn(n5))).
+
+cnf(u59,axiom,
+    rdn_non_zero_digit(rdnn(n6))).
+
+cnf(u60,axiom,
+    rdn_non_zero_digit(rdnn(n7))).
+
+cnf(u61,axiom,
+    rdn_non_zero_digit(rdnn(n8))).
+
+cnf(u62,axiom,
+    rdn_non_zero_digit(rdnn(n9))).
+
+cnf(u63,axiom,
+    rdn_positive_less(rdnn(n0),rdnn(n1))).
+
+cnf(u64,axiom,
+    rdn_positive_less(rdnn(n1),rdnn(n2))).
+
+cnf(u65,axiom,
+    rdn_positive_less(rdnn(n2),rdnn(n3))).
+
+cnf(u66,axiom,
+    rdn_positive_less(rdnn(n3),rdnn(n4))).
+
+cnf(u67,axiom,
+    rdn_positive_less(rdnn(n4),rdnn(n5))).
+
+cnf(u68,axiom,
+    rdn_positive_less(rdnn(n5),rdnn(n6))).
+
+cnf(u69,axiom,
+    rdn_positive_less(rdnn(n6),rdnn(n7))).
+
+cnf(u70,axiom,
+    rdn_positive_less(rdnn(n7),rdnn(n8))).
+
+cnf(u71,axiom,
+    rdn_positive_less(rdnn(n8),rdnn(n9))).
+
+cnf(u72,axiom,
+    rdn_positive_less(rdnn(X0),rdnn(X2)) | ~rdn_positive_less(rdnn(X1),rdnn(X2)) | ~rdn_positive_less(rdnn(X0),rdnn(X1))).
+
+cnf(u73,axiom,
+    rdn_positive_less(rdn(rdnn(X0),X1),rdn(rdnn(X2),X3)) | ~rdn_positive_less(X1,X3)).
+
+cnf(u74,axiom,
+    rdn_positive_less(rdn(rdnn(X0),X1),rdn(rdnn(X2),X1)) | ~rdn_non_zero(X1) | ~rdn_positive_less(rdnn(X0),rdnn(X2))).
+
+cnf(u75,axiom,
+    rdn_positive_less(rdnn(X0),rdn(rdnn(X1),X2)) | ~rdn_non_zero(X2)).
+
+cnf(u76,axiom,
+    rdn_non_zero(rdnn(X0)) | ~rdn_non_zero_digit(rdnn(X0))).
+
+cnf(u77,axiom,
+    rdn_non_zero(rdn(rdnn(X0),X1)) | ~rdn_non_zero(X1)).
+
+cnf(u80,axiom,
+    less(X0,X1) | X0 = X1 | less(X1,X0)).
+
+cnf(u81,axiom,
+    ~less(X1,X1)).
+
+cnf(u78,axiom,
+    ~less(X1,X0) | ~less(X0,X1)).
+

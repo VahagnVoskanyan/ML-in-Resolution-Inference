@@ -1,0 +1,40 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u75,axiom,
+    pred3(func_f(const_b)) | pred5(func_h(const_b),X1) | ~pred3(X0)).
+
+cnf(u76,axiom,
+    pred5(func_f(X1)) | ~pred4(X0,const_c) | pred1(X1,func_f(X1),const_c)).
+
+cnf(u77,axiom,
+    ~pred1(X1,func_h(const_a),X0) | pred1(X0,const_a,X0)).
+
+cnf(u78,axiom,
+    pred5(X2,X1) | ~pred5(X0)).
+
+cnf(u79,axiom,
+    ~pred5(X1) | pred2(func_g(X0),X1,func_h(const_c))).
+
+cnf(u80,axiom,
+    pred4(func_f(X1),func_g(const_c)) | ~pred4(func_h(X0),func_g(X0)) | ~pred3(X0,const_c)).
+
+cnf(u81,axiom,
+    ~pred5(func_g(X1),X1) | pred3(func_g(X0))).
+
+cnf(u82,axiom,
+    ~pred5(X2,func_f(X1),func_f(const_a)) | ~pred1(X1,func_h(const_a),func_f(X0))).
+
+cnf(u83,axiom,
+    ~pred2(func_h(X2),X1,X1) | ~pred5(func_h(const_a)) | pred5(const_a,X1,X0) | pred5(const_a,const_a)).
+
+cnf(u84,axiom,
+    ~pred5(X2,X2,X1) | pred3(const_c) | pred4(X0)).
+
+cnf(u85,axiom,
+    pred3(func_g(X1)) | pred3(X0,const_a)).
+
+cnf(u86,axiom,
+    ~pred4(const_b) | pred3(func_f(X0),func_f(X0))).
+
+cnf(u87,axiom,
+    ~pred1(func_h(X1),X0,const_a) | pred2(func_f(const_a),X1,const_a)).
+

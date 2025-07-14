@@ -1,0 +1,46 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u63,axiom,
+    ~p1(X2) | ~p2(X1) | p3(X2,X0)).
+
+cnf(u64,axiom,
+    ~p3(X1,X1) | p2(X1) | p3(X0)).
+
+cnf(u65,axiom,
+    p2(X2) | ~p3(X1) | ~p2(X0)).
+
+cnf(u66,axiom,
+    p2(X0) | p2(X0,X0)).
+
+cnf(u67,axiom,
+    p3(X2,X1) | p3(X1,X0) | p1(X2)).
+
+cnf(u68,axiom,
+    p1(X1) | p1(X0)).
+
+cnf(u69,axiom,
+    p2(X2,X2) | ~p3(X1,X0)).
+
+cnf(u70,axiom,
+    p2(X1) | p2(X0) | p3(X1)).
+
+cnf(u71,axiom,
+    p2(X1,X1) | p2(X0,X0)).
+
+cnf(u72,axiom,
+    p3(X2,X1) | p1(X0) | ~p3(X0,X2)).
+
+cnf(u73,axiom,
+    ~p2(X2) | p2(X1) | p3(X0,X2)).
+
+cnf(u74,axiom,
+    ~p2(X2,X2) | p3(X1,X0)).
+
+cnf(u75,axiom,
+    ~p2(X1) | ~p2(X0,X1) | p1(X1)).
+
+cnf(u77,negated_conjecture,
+    p2(sK0)).
+
+cnf(u76,negated_conjecture,
+    ~p3(sK0,sK0)).
+

@@ -1,0 +1,20 @@
+fof(ax1, axiom, (pred2(X2,X2,X1) | pred2(X1,func_g(X1)))).
+fof(ax2, axiom, (~pred1(func_h(const_c),func_g(X2),func_g(const_c)) | ~pred2(func_f(X0),X2) | ~pred5(X1))).
+fof(ax3, axiom, (pred4(X0) | pred3(func_h(X2)) | pred1(X1,X1,func_h(const_b)))).
+fof(ax4, axiom, (~pred5(X1) | ~pred4(func_g(X1)) | ~pred3(const_a))).
+fof(ax5, axiom, (pred3(func_g(X0)) | ~pred1(X0,func_g(X2),const_c) | pred2(X0) | ~pred2(X1,func_h(const_c),X0) | ~pred5(X0))).
+fof(ax6, axiom, (~pred5(X1) | pred3(func_g(X2),func_f(X1)))).
+fof(ax7, axiom, (~pred3(X0) | pred3(X2,X0,X1))).
+fof(ax8, axiom, (pred2(X1,const_c,X1) | ~pred4(func_h(X2)) | pred4(func_h(const_c)))).
+fof(ax9, axiom, (pred2(X1) | ~pred5(const_b,const_b,func_h(const_b)))).
+fof(ax10, axiom, (~pred2(X0) | ~pred2(X1) | pred1(func_f(X0),func_h(X1)))).
+fof(ax11, axiom, (~pred3(X0,X0) | pred1(func_f(X0)) | pred5(func_h(X1),func_f(const_b)))).
+fof(ax12, axiom, (~pred5(const_b,X0,X1) | ~pred5(const_b,X1) | pred5(const_b,X0,X2) | pred4(X1) | pred4(X1,X2,X0))).
+fof(ax13, axiom, (~pred2(X1) | ~pred2(func_f(X2),X0,func_g(X0)))).
+fof(ax14, axiom, (~pred4(X2,func_h(X2)) | pred4(const_b) | pred4(func_h(X1),func_f(X1)))).
+fof(ax15, axiom, (pred5(func_h(X2)) | ~pred5(X0) | ~pred2(const_b) | ~pred1(const_b) | pred4(X2))).
+fof(ax16, axiom, (pred4(X1) | ~pred5(func_g(X0),func_h(X0)))).
+fof(ax17, axiom, (~pred2(X1) | pred5(func_f(const_b),X0,X2))).
+fof(ax18, axiom, (~pred4(const_c) | ~pred3(X0,X1) | pred3(func_g(const_c),func_f(X2),func_g(X2)) | pred4(const_c,func_f(X0),func_g(X1)))).
+fof(ax19, axiom, (~pred4(X2,X1) | pred4(const_b,func_f(X0)))).
+fof(ax20, axiom, (pred4(const_a,X1) | ~pred2(X1,const_a) | ~pred3(X0))).

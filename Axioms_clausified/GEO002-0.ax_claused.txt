@@ -1,0 +1,55 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u1,axiom,
+    equidistant(X0,X1,X1,X0)).
+
+cnf(u2,axiom,
+    equidistant(X2,X3,X4,X5) | ~equidistant(X0,X1,X4,X5) | ~equidistant(X0,X1,X2,X3)).
+
+cnf(u3,axiom,
+    X0 = X1 | ~equidistant(X0,X1,X2,X2)).
+
+cnf(u4,axiom,
+    between(X0,X1,extension(X0,X1,X5,X3))).
+
+cnf(u5,axiom,
+    equidistant(X1,extension(X0,X1,X5,X3),X5,X3)).
+
+cnf(u6,axiom,
+    equidistant(X2,X3,X8,X9) | X0 = X1 | ~between(X6,X7,X8) | ~between(X0,X1,X2) | ~equidistant(X1,X3,X7,X9) | ~equidistant(X0,X3,X6,X9) | ~equidistant(X1,X2,X7,X8) | ~equidistant(X0,X1,X6,X7)).
+
+cnf(u7,axiom,
+    X0 = X1 | ~between(X0,X1,X0)).
+
+cnf(u8,axiom,
+    between(X3,inner_pasch(X10,X3,X5,X0,X1),X1) | ~between(X1,X0,X5) | ~between(X10,X3,X5)).
+
+cnf(u9,axiom,
+    between(X0,inner_pasch(X10,X3,X5,X0,X1),X10) | ~between(X1,X0,X5) | ~between(X10,X3,X5)).
+
+cnf(u10,axiom,
+    ~between(lower_dimension_point_1,lower_dimension_point_2,lower_dimension_point_3)).
+
+cnf(u11,axiom,
+    ~between(lower_dimension_point_2,lower_dimension_point_3,lower_dimension_point_1)).
+
+cnf(u12,axiom,
+    ~between(lower_dimension_point_3,lower_dimension_point_1,lower_dimension_point_2)).
+
+cnf(u13,axiom,
+    X3 = X5 | between(X2,X0,X1) | between(X1,X2,X0) | between(X0,X1,X2) | ~equidistant(X2,X5,X2,X3) | ~equidistant(X1,X5,X1,X3) | ~equidistant(X0,X5,X0,X3)).
+
+cnf(u14,axiom,
+    between(X10,X3,euclid1(X10,X3,X5,X0,X1)) | X5 = X10 | ~between(X3,X5,X0) | ~between(X10,X5,X1)).
+
+cnf(u15,axiom,
+    between(X10,X0,euclid2(X10,X3,X5,X0,X1)) | X5 = X10 | ~between(X3,X5,X0) | ~between(X10,X5,X1)).
+
+cnf(u16,axiom,
+    between(euclid1(X10,X3,X5,X0,X1),X1,euclid2(X10,X3,X5,X0,X1)) | X5 = X10 | ~between(X3,X5,X0) | ~between(X10,X5,X1)).
+
+cnf(u17,axiom,
+    between(X9,continuous(X10,X3,X9,X5,X0,X6),X6) | ~between(X3,X5,X0) | ~between(X10,X3,X0) | ~equidistant(X10,X0,X10,X6) | ~equidistant(X10,X3,X10,X9)).
+
+cnf(u18,axiom,
+    equidistant(X10,X5,X10,continuous(X10,X3,X9,X5,X0,X6)) | ~between(X3,X5,X0) | ~between(X10,X3,X0) | ~equidistant(X10,X0,X10,X6) | ~equidistant(X10,X3,X10,X9)).
+

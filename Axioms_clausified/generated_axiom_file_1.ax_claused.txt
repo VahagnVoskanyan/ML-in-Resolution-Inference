@@ -1,0 +1,31 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u39,axiom,
+    pred3(X2,X1) | ~pred3(X0,X2) | pred2(X0,X0)).
+
+cnf(u40,axiom,
+    pred3(X2,X1) | pred3(X0,X2) | pred2(X2,X2)).
+
+cnf(u41,axiom,
+    pred1(X2) | ~pred2(X1,X0)).
+
+cnf(u42,axiom,
+    ~pred2(X1,X1) | ~pred3(X0)).
+
+cnf(u43,axiom,
+    ~pred1(X1,X0) | pred2(X1)).
+
+cnf(u44,axiom,
+    ~pred3(X1,X0) | ~pred1(X1)).
+
+cnf(u45,axiom,
+    pred2(X0) | ~pred2(X0,X0)).
+
+cnf(u46,axiom,
+    ~pred2(X1,X1) | ~pred2(X0)).
+
+cnf(u47,axiom,
+    pred1(X0) | pred3(X0)).
+
+cnf(u48,axiom,
+    pred1(X1,X0) | ~pred1(X1) | pred2(X0,X1)).
+

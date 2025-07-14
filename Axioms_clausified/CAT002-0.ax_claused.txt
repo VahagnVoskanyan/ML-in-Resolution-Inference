@@ -1,0 +1,22 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u1,axiom,
+    domain(X0) = codomain(domain(X0))).
+
+cnf(u2,axiom,
+    codomain(X0) = domain(codomain(X0))).
+
+cnf(u3,axiom,
+    compose(domain(X0),X0) = X0).
+
+cnf(u4,axiom,
+    compose(X0,codomain(X0)) = X0).
+
+cnf(u5,axiom,
+    domain(X0) = domain(compose(X0,X1)) | codomain(X0) != domain(X1)).
+
+cnf(u6,axiom,
+    codomain(compose(X0,X1)) = codomain(X1) | codomain(X0) != domain(X1)).
+
+cnf(u7,axiom,
+    compose(X0,compose(X1,X2)) = compose(compose(X0,X1),X2) | codomain(X1) != domain(X2) | codomain(X0) != domain(X1)).
+

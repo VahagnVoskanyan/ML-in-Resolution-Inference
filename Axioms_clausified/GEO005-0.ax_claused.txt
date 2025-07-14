@@ -1,0 +1,91 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u1,axiom,
+    ~point(X1) | ~point(X0) | X0 = X1 | point_on_line(X0,line_from_to(X0,X1))).
+
+cnf(u2,axiom,
+    ~point(X1) | ~point(X0) | X0 = X1 | point_on_line(X1,line_from_to(X0,X1))).
+
+cnf(u3,axiom,
+    ~point(X1) | ~point(X0) | X0 = X1 | line(line_from_to(X0,X1))).
+
+cnf(u4,axiom,
+    ~line(X3) | ~line(X2) | ~point(X1) | ~point(X0) | ~point_on_line(X1,X3) | ~point_on_line(X0,X3) | X2 = X3 | ~point_on_line(X1,X2) | X0 = X1 | ~point_on_line(X0,X2)).
+
+cnf(u5,axiom,
+    ~line(X4) | point_on_line(point_1_on_line(X4),X4)).
+
+cnf(u6,axiom,
+    ~line(X4) | point_on_line(point_2_on_line(X4),X4)).
+
+cnf(u7,axiom,
+    ~line(X4) | point(point_1_on_line(X4))).
+
+cnf(u8,axiom,
+    ~line(X4) | point(point_2_on_line(X4))).
+
+cnf(u9,axiom,
+    ~line(X4) | point_1_on_line(X4) != point_2_on_line(X4)).
+
+cnf(u10,axiom,
+    ~line(X4) | ~point_on_line(a_point_not_on_line(X4),X4)).
+
+cnf(u11,axiom,
+    ~line(X4) | point(a_point_not_on_line(X4))).
+
+cnf(u12,axiom,
+    line(at_least_one_line)).
+
+cnf(u13,axiom,
+    point_on_plane(a_point_on_plane(X0),X0) | ~plane(X0)).
+
+cnf(u14,axiom,
+    point(a_point_on_plane(X0)) | ~plane(X0)).
+
+cnf(u15,axiom,
+    ~point_on_plane(a_point_not_on_plane(X0),X0) | ~plane(X0)).
+
+cnf(u16,axiom,
+    point(a_point_not_on_plane(X0)) | ~plane(X0)).
+
+cnf(u17,axiom,
+    X6 = X7 | X5 = X7 | X5 = X6 | collinear(X5,X6,X7) | ~point(X7) | ~point(X6) | ~point(X5) | point_on_plane(X5,plane_for_points(X5,X6,X7))).
+
+cnf(u18,axiom,
+    X6 = X7 | X5 = X7 | X5 = X6 | collinear(X5,X6,X7) | ~point(X7) | ~point(X6) | ~point(X5) | point_on_plane(X6,plane_for_points(X5,X6,X7))).
+
+cnf(u19,axiom,
+    X6 = X7 | X5 = X7 | X5 = X6 | collinear(X5,X6,X7) | ~point(X7) | ~point(X6) | ~point(X5) | point_on_plane(X7,plane_for_points(X5,X6,X7))).
+
+cnf(u20,axiom,
+    X6 = X7 | X5 = X7 | X5 = X6 | collinear(X5,X6,X7) | ~point(X7) | ~point(X6) | ~point(X5) | plane(plane_for_points(X5,X6,X7))).
+
+cnf(u21,axiom,
+    X0 = X1 | ~plane(X1) | ~point_on_plane(X7,X1) | ~point_on_plane(X6,X1) | ~point_on_plane(X5,X1) | ~plane(X0) | ~point_on_plane(X7,X0) | ~point_on_plane(X6,X0) | ~point_on_plane(X5,X0) | X6 = X7 | X5 = X7 | X5 = X6 | collinear(X5,X6,X7) | ~point(X7) | ~point(X6) | ~point(X5)).
+
+cnf(u23,axiom,
+    point_on_plane(common_point_on_planes(X0,X1,X5),X0) | ~point(X5) | ~point_on_plane(X5,X1) | ~point_on_plane(X5,X0) | X0 = X1 | ~plane(X1) | ~plane(X0)).
+
+cnf(u24,axiom,
+    point_on_plane(common_point_on_planes(X0,X1,X5),X1) | ~point(X5) | ~point_on_plane(X5,X1) | ~point_on_plane(X5,X0) | X0 = X1 | ~plane(X1) | ~plane(X0)).
+
+cnf(u25,axiom,
+    point(common_point_on_planes(X0,X1,X5)) | ~point(X5) | ~point_on_plane(X5,X1) | ~point_on_plane(X5,X0) | X0 = X1 | ~plane(X1) | ~plane(X0)).
+
+cnf(u26,axiom,
+    common_point_on_planes(X0,X1,X5) != X5 | ~point(X5) | ~point_on_plane(X5,X1) | ~point_on_plane(X5,X0) | X0 = X1 | ~plane(X1) | ~plane(X0)).
+
+cnf(u27,axiom,
+    ~collinear(X5,X6,X7) | point_on_line(X5,line_through_3_points(X5,X6,X7)) | X6 = X7 | X5 = X7 | X5 = X6 | ~point(X7) | ~point(X6) | ~point(X5)).
+
+cnf(u28,axiom,
+    ~collinear(X5,X6,X7) | point_on_line(X6,line_through_3_points(X5,X6,X7)) | X6 = X7 | X5 = X7 | X5 = X6 | ~point(X7) | ~point(X6) | ~point(X5)).
+
+cnf(u29,axiom,
+    ~collinear(X5,X6,X7) | point_on_line(X7,line_through_3_points(X5,X6,X7)) | X6 = X7 | X5 = X7 | X5 = X6 | ~point(X7) | ~point(X6) | ~point(X5)).
+
+cnf(u30,axiom,
+    ~collinear(X5,X6,X7) | line(line_through_3_points(X5,X6,X7)) | X6 = X7 | X5 = X7 | X5 = X6 | ~point(X7) | ~point(X6) | ~point(X5)).
+
+cnf(u31,axiom,
+    ~line(X8) | X6 = X7 | X5 = X7 | X5 = X6 | ~point(X7) | ~point(X6) | ~point(X5) | ~point_on_line(X7,X8) | ~point_on_line(X6,X8) | ~point_on_line(X5,X8) | collinear(X5,X6,X7)).
+

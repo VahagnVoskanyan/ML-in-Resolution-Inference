@@ -1,0 +1,19 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u9,axiom,
+    unorthogonal_lines(X0,X1) | convergent_lines(X0,X1)).
+
+cnf(u13,axiom,
+    ~unorthogonal_lines(X1,X2) | ~convergent_lines(X1,X2) | unorthogonal_lines(X0,X2) | unorthogonal_lines(X0,X1)).
+
+cnf(u12,axiom,
+    ~unorthogonal_lines(X1,X2) | ~convergent_lines(X1,X2) | unorthogonal_lines(X0,X2) | convergent_lines(X0,X1)).
+
+cnf(u11,axiom,
+    ~unorthogonal_lines(X1,X2) | ~convergent_lines(X1,X2) | convergent_lines(X0,X2) | unorthogonal_lines(X0,X1)).
+
+cnf(u10,axiom,
+    ~unorthogonal_lines(X1,X2) | ~convergent_lines(X1,X2) | convergent_lines(X0,X2) | convergent_lines(X0,X1)).
+
+cnf(u14,axiom,
+    ~convergent_lines(X1,X2) | unorthogonal_lines(X0,X2) | unorthogonal_lines(X0,X1)).
+

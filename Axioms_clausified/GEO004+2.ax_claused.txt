@@ -1,0 +1,85 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u52,axiom,
+    between_o(X0,X1,X2,X3) | ~ordered_by(X0,X2,X1) | ~ordered_by(X0,X3,X2)).
+
+cnf(u51,axiom,
+    between_o(X0,X1,X2,X3) | ~ordered_by(X0,X2,X3) | ~ordered_by(X0,X1,X2)).
+
+cnf(u50,axiom,
+    ordered_by(X0,X2,X1) | ordered_by(X0,X2,X3) | ~between_o(X0,X1,X2,X3)).
+
+cnf(u49,axiom,
+    ordered_by(X0,X2,X1) | ordered_by(X0,X1,X2) | ~between_o(X0,X1,X2,X3)).
+
+cnf(u48,axiom,
+    ordered_by(X0,X3,X2) | ordered_by(X0,X2,X3) | ~between_o(X0,X1,X2,X3)).
+
+cnf(u47,axiom,
+    ordered_by(X0,X3,X2) | ordered_by(X0,X1,X2) | ~between_o(X0,X1,X2,X3)).
+
+cnf(u54,axiom,
+    ordered_by(X1,X0,X2) | ~incident_o(X2,X1) | X0 = X2 | ~start_point(X0,X1)).
+
+cnf(u53,axiom,
+    incident_o(X0,X1) | ~start_point(X0,X1)).
+
+cnf(u56,axiom,
+    incident_o(X2,X0) | ~ordered_by(X0,X1,X2)).
+
+cnf(u55,axiom,
+    incident_o(X1,X0) | ~ordered_by(X0,X1,X2)).
+
+cnf(u59,axiom,
+    incident_o(X2,X0) | ~incident_c(X2,sK0(X0))).
+
+cnf(u58,axiom,
+    incident_c(X2,sK0(X0)) | ~incident_o(X2,X0)).
+
+cnf(u57,axiom,
+    open(sK0(X0))).
+
+cnf(u64,axiom,
+    between_o(X3,X0,X1,X2) | ~between_c(X4,X0,X1,X2) | ~incident_c(sK1(X3,X4),X4) | ~incident_o(sK1(X3,X4),X3)).
+
+cnf(u63,axiom,
+    between_o(X3,X0,X1,X2) | ~between_c(X4,X0,X1,X2) | incident_c(sK1(X3,X4),X4) | incident_o(sK1(X3,X4),X3)).
+
+cnf(u62,axiom,
+    between_c(sK2(X0,X1,X2,X3),X0,X1,X2) | ~between_o(X3,X0,X1,X2)).
+
+cnf(u61,axiom,
+    incident_o(X7,X3) | ~incident_c(X7,sK2(X0,X1,X2,X3)) | ~between_o(X3,X0,X1,X2)).
+
+cnf(u60,axiom,
+    incident_c(X7,sK2(X0,X1,X2,X3)) | ~incident_o(X7,X3) | ~between_o(X3,X0,X1,X2)).
+
+cnf(u65,axiom,
+    start_point(sK3(X0),X0)).
+
+cnf(u68,axiom,
+    ordered_by(sK4(X0,X1,X2),X0,X1) | ~incident_c(X1,X2) | ~incident_c(X0,X2) | X0 = X1 | ~open(X2)).
+
+cnf(u67,axiom,
+    incident_o(X4,sK4(X0,X1,X2)) | ~incident_c(X4,X2) | ~incident_c(X1,X2) | ~incident_c(X0,X2) | X0 = X1 | ~open(X2)).
+
+cnf(u66,axiom,
+    incident_c(X4,X2) | ~incident_o(X4,sK4(X0,X1,X2)) | ~incident_c(X1,X2) | ~incident_c(X0,X2) | X0 = X1 | ~open(X2)).
+
+cnf(u70,axiom,
+    X0 = X1 | ~ordered_by(X1,sK5(X0,X1),sK6(X0,X1)) | ~ordered_by(X0,sK5(X0,X1),sK6(X0,X1))).
+
+cnf(u69,axiom,
+    X0 = X1 | ordered_by(X1,sK5(X0,X1),sK6(X0,X1)) | ordered_by(X0,sK5(X0,X1),sK6(X0,X1))).
+
+cnf(u74,axiom,
+    underlying_curve(X1) = X0 | ~incident_c(sK7(X0,X1),X0) | ~incident_o(sK7(X0,X1),X1)).
+
+cnf(u73,axiom,
+    underlying_curve(X1) = X0 | incident_c(sK7(X0,X1),X0) | incident_o(sK7(X0,X1),X1)).
+
+cnf(u75,axiom,
+    incident_o(X3,X1) | ~incident_c(X3,underlying_curve(X1))).
+
+cnf(u76,axiom,
+    incident_c(X3,underlying_curve(X1)) | ~incident_o(X3,X1)).
+

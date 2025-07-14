@@ -1,0 +1,25 @@
+% Running in auto input_syntax mode. Trying TPTP
+cnf(u18,axiom,
+    ~unequally_directed_lines(X0,X0)).
+
+cnf(u19,axiom,
+    ~unequally_directed_lines(X1,X2) | unequally_directed_lines(X0,X2) | unequally_directed_lines(X0,X1)).
+
+cnf(u27,axiom,
+    ~unequally_directed_lines(X1,reverse_line(X2)) | ~unequally_directed_lines(X1,X2) | unequally_directed_lines(X0,reverse_line(X2)) | unequally_directed_lines(X0,reverse_line(X1))).
+
+cnf(u26,axiom,
+    ~unequally_directed_lines(X1,reverse_line(X2)) | ~unequally_directed_lines(X1,X2) | unequally_directed_lines(X0,reverse_line(X2)) | unequally_directed_lines(X0,X1)).
+
+cnf(u25,axiom,
+    ~unequally_directed_lines(X1,reverse_line(X2)) | ~unequally_directed_lines(X1,X2) | unequally_directed_lines(X0,X2) | unequally_directed_lines(X0,reverse_line(X1))).
+
+cnf(u24,axiom,
+    ~unequally_directed_lines(X1,reverse_line(X2)) | ~unequally_directed_lines(X1,X2) | unequally_directed_lines(X0,X2) | unequally_directed_lines(X0,X1)).
+
+cnf(u29,axiom,
+    ~unequally_directed_lines(X1,X2) | unequally_directed_lines(X0,reverse_line(X2))).
+
+cnf(u28,axiom,
+    ~unequally_directed_lines(X0,reverse_line(X1))).
+
