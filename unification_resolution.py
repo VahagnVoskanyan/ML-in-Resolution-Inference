@@ -6,7 +6,7 @@ class UnificationResolution:
         pass
 
     # -------------------------------------------------------------------------
-    # 2) Resolution / Unification Logic
+    # Resolution / Unification Logic
     # -------------------------------------------------------------------------
     def is_variable(self, term: str) -> bool:
         """Check if a term is a variable based on TPTP format (X0, X1, etc.)"""

@@ -1,0 +1,33 @@
+% Running in auto input_syntax mode. Trying TPTP
+% WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% lrs+2_5:39_bsr=unit_only:to=lpo:drc=off:sil=128000:plsq=on:plsqr=2,19:sp=frequency:lcm=reverse:fd=preordered:s2a=on:i=38749:s2at=-1.0:fsr=off:uhcvi=on:rawr=on:aer=off:lwlo=on:add=off:bce=on:acc=model:afr=on_0 on gen_prob_CAT001-0_N=50_T=8.0_1 for (194ds/38749Mi)
+% Solution written to "/tmp/vampire-proof-13"
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for gen_prob_CAT001-0_N=50_T=8.0_1
+% SZS output start Proof for gen_prob_CAT001-0_N=50_T=8.0_1
+fof(f59,plain,(
+  $false),
+  inference(resolution,[],[f51,f46])).
+fof(f46,negated_conjecture,(
+  ( ! [X0,X1,X4] : (~product(domain(codomain(X4)),domain(codomain(X4)),compose(X0,X1))) )),
+  file('/vampire/examples/Gen_Problems/gen_prob_CAT001-0_N=50_T=8.0_1.p',unknown)).
+fof(f51,plain,(
+  ( ! [X0,X1] : (product(X0,X1,compose(X0,X1))) )),
+  inference(subsumption_resolution,[],[f1,f31])).
+fof(f31,negated_conjecture,(
+  ( ! [X2,X3] : (defined(X3,X2)) )),
+  file('/vampire/examples/Gen_Problems/gen_prob_CAT001-0_N=50_T=8.0_1.p',unknown)).
+fof(f1,axiom,(
+  ( ! [X0,X1] : (~defined(X0,X1) | product(X0,X1,compose(X0,X1))) )),
+  file('/vampire/examples/Gen_Problems/gen_prob_CAT001-0_N=50_T=8.0_1.p',unknown)).
+% SZS output end Proof for gen_prob_CAT001-0_N=50_T=8.0_1
+% ------------------------------
+% Version: Vampire 4.9 (Release build, commit 1d65d6cd7 on 2025-04-08 23:52:25 +0100)
+% Termination reason: Refutation
+
+% Time elapsed: 0.002 s
+% Peak memory usage: 11 MB
+% ------------------------------
+% ------------------------------
+% Success in time 0.026 s

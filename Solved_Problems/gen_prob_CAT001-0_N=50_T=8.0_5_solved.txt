@@ -1,0 +1,57 @@
+% Running in auto input_syntax mode. Trying TPTP
+% WARNING: time unlimited strategy and instruction limiting not in place - attempting to translate instructions to time
+% lrs+2_5:39_bsr=unit_only:to=lpo:drc=off:sil=128000:plsq=on:plsqr=2,19:sp=frequency:lcm=reverse:fd=preordered:s2a=on:i=38749:s2at=-1.0:fsr=off:uhcvi=on:rawr=on:aer=off:lwlo=on:add=off:bce=on:acc=model:afr=on_0 on gen_prob_CAT001-0_N=50_T=8.0_5 for (194ds/38749Mi)
+% Solution written to "/tmp/vampire-proof-33"
+% Running in auto input_syntax mode. Trying TPTP
+% Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for gen_prob_CAT001-0_N=50_T=8.0_5
+% SZS output start Proof for gen_prob_CAT001-0_N=50_T=8.0_5
+fof(f462,plain,(
+  $false),
+  inference(subsumption_resolution,[],[f19,f461])).
+fof(f461,plain,(
+  ( ! [X0] : (~product(X0,X0,X0)) )),
+  inference(superposition,[],[f186,f178])).
+fof(f178,plain,(
+  ( ! [X0] : (compose(X0,X0) = X0) )),
+  inference(resolution,[],[f151,f44])).
+fof(f44,plain,(
+  ( ! [X0] : (product(X0,X0,compose(X0,X0))) )),
+  inference(resolution,[],[f1,f20])).
+fof(f20,negated_conjecture,(
+  ( ! [X0] : (defined(X0,X0)) )),
+  file('/vampire/examples/Gen_Problems/gen_prob_CAT001-0_N=50_T=8.0_5.p',unknown)).
+fof(f1,axiom,(
+  ( ! [X0,X1] : (~defined(X0,X1) | product(X0,X1,compose(X0,X1))) )),
+  file('/vampire/examples/Gen_Problems/gen_prob_CAT001-0_N=50_T=8.0_5.p',unknown)).
+fof(f151,plain,(
+  ( ! [X0,X1] : (~product(X1,X1,X0) | X0 = X1) )),
+  inference(resolution,[],[f18,f19])).
+fof(f18,axiom,(
+  ( ! [X2,X0,X1,X6] : (~product(X0,X1,X6) | X2 = X6 | ~product(X0,X1,X2)) )),
+  file('/vampire/examples/Gen_Problems/gen_prob_CAT001-0_N=50_T=8.0_5.p',unknown)).
+fof(f186,plain,(
+  ( ! [X0,X1] : (~product(X0,X0,compose(X0,X1))) )),
+  inference(backward_demodulation,[],[f23,f180])).
+fof(f180,plain,(
+  ( ! [X0] : (codomain(X0) = X0) )),
+  inference(resolution,[],[f151,f22])).
+fof(f22,negated_conjecture,(
+  ( ! [X0] : (product(X0,X0,codomain(X0))) )),
+  file('/vampire/examples/Gen_Problems/gen_prob_CAT001-0_N=50_T=8.0_5.p',unknown)).
+fof(f23,negated_conjecture,(
+  ( ! [X0,X1] : (~product(codomain(X0),X0,compose(X0,X1))) )),
+  file('/vampire/examples/Gen_Problems/gen_prob_CAT001-0_N=50_T=8.0_5.p',unknown)).
+fof(f19,negated_conjecture,(
+  ( ! [X0] : (product(X0,X0,X0)) )),
+  file('/vampire/examples/Gen_Problems/gen_prob_CAT001-0_N=50_T=8.0_5.p',unknown)).
+% SZS output end Proof for gen_prob_CAT001-0_N=50_T=8.0_5
+% ------------------------------
+% Version: Vampire 4.9 (Release build, commit 1d65d6cd7 on 2025-04-08 23:52:25 +0100)
+% Termination reason: Refutation
+
+% Time elapsed: 0.005 s
+% Peak memory usage: 11 MB
+% ------------------------------
+% ------------------------------
+% Success in time 0.027 s
