@@ -172,8 +172,9 @@ if __name__ == '__main__':
 
         # with open(json_filename, 'w') as fp:
         #      json.dump(ser_clauses, fp)
-        ###
+        # ##
 
         # Slows down everything
-        #run_comnnads_solve.run_docker_solve_command()
+        #from _3_solve_problems_using_ATP import run_solve_command
+        #run_solve_command()
 

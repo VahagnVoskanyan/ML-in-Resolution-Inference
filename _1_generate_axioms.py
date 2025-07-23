@@ -9,6 +9,7 @@ using an integrated ResolutionDataGenerator.
 import random
 import argparse
 from typing import List, Optional
+import constants
 
 class ResolutionDataGenerator:
     def __init__(
@@ -167,7 +168,7 @@ def main():
     )
     parser.add_argument(
         '--output-file', '-o',
-        type=str, default='Axioms/gen_ax_file_0.ax',
+        type=str, default=f'{constants.AXIOMS}/gen_ax_file_0.ax',
         help='Output .ax file name'
     )
     args = parser.parse_args()
