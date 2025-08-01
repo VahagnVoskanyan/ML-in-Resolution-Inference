@@ -1,6 +1,6 @@
 import argparse, glob, json, os, re, collections, torch
 from torch_geometric.loader import DataLoader
-from train_model_GNN import (
+from _6_train_model_GNN import (
     ClauseResolutionDataset,
     EdgeClassifierGNN,
     build_graph_from_example,      # only needed if we changed the import path

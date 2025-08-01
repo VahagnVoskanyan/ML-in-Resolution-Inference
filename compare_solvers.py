@@ -10,7 +10,7 @@ from collections import defaultdict
 from typing import Dict, List, Tuple, Any
 
 import torch
-from train_model_GNN import (               # ← comes from your unchanged file
+from _6_train_model_GNN import (               # ← comes from your unchanged file
     EdgeClassifierGNN,
     build_graph_from_example,
     embed_literal, parse_literal,           # only needed if you tweak below
