@@ -406,14 +406,14 @@ if __name__ == "__main__":
 # print(f"Merged → {out}")
 
 # Train from scratch on every JSONL in the current directory
-# python train_model_GNN.py --data Res_Pairs_Copy --epochs 50 --lr 1e-3 --checkpoint Models/gnn_model4.pt
-# python train_model_GNN.py --data Res_Pairs --epochs 30 --lr 1e-3 --checkpoint Models/gnn_model3.pt
+# python _6_train_model_GNN.py --data Res_Pairs_Copy --epochs 50 --lr 1e-3 --checkpoint Models/gnn_model4.pt
+# python _6_train_model_GNN.py --data Res_Pairs --epochs 30 --lr 1e-3 --checkpoint Models/gnn_model3.pt
 
 # Keep overwriting the same file
-# python train_model_GNN.py --data Res_Pairs --epochs 5 --lr 1e-4 --checkpoint Models/gnn_model.pt
+# python _6_train_model_GNN.py --data Res_Pairs --epochs 5 --lr 1e-4 --checkpoint Models/gnn_model.pt
 
 # Fine‑tune and save as a new file
-# python train_model_GNN.py --data Res_Pairs --epochs 30 --lr 1e-6 --init Models/gnn_model1.pt --checkpoint Models/gnn_model2.pt
+# python _6_train_model_GNN.py --data Res_Pairs --epochs 30 --lr 1e-6 --init Models/gnn_model1.pt --checkpoint Models/gnn_model2.pt
 
 
 # Predicate Names
